@@ -1,0 +1,44 @@
+package quiz;
+import java.util.*;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class JQuiz {
+
+	public static void main(String[] args) {
+		
+		while(true) {
+		String prompt1 ="Result";
+		//String prompt2 = "Quiz";
+		String prompt = "100 + 250 = ? \n  A. 350 \n  B. 150 \n  C. 450 \n  D. 250 ";
+		String input = JOptionPane.showInputDialog(null, prompt, "Quiz", JOptionPane.INFORMATION_MESSAGE);
+		Scanner myObj = new Scanner( input );
+		char q1 = myObj.next().charAt(0);
+		switch(q1) {
+		case 'A': System.out.println("A. 350");
+			break;
+		case 'B': System.out.println("B. 150");
+		    break;
+		case 'C': System.out.println("C. 250");
+		    break;
+		case 'D': System.out.println("D. 450");
+		    break;
+		}
+		
+		if (q1 == 'A') {
+			
+			System.out.println("Correct!");
+			JOptionPane.showMessageDialog( null, "Correct", prompt1, JOptionPane.INFORMATION_MESSAGE  );
+			break;
+		}else {
+			
+			System.out.println("Incorrect!");
+			JOptionPane.showMessageDialog( null, "Incorrect", prompt1, JOptionPane.INFORMATION_MESSAGE );
+		
+		}
+		
+		} 
+	
+	}
+	
+}
