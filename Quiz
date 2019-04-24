@@ -1,0 +1,30 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class Quiz {
+
+	public static void main(String[] args) {
+		
+	    char q1 = 'A';
+		switch(q1) {
+		case 'A': System.out.println("A. 350");
+			break;
+		case 'B': System.out.println("B. 150");
+		    break;
+		case 'C': System.out.println("C. 250");
+		    break;
+		case 'D': System.out.println("D. 450");
+		    break;
+		}
+		
+		if (q1 == 'A') {
+			
+			System.out.println("Correct!");
+			
+		}else {
+			System.out.println("Incorrect!  ");
+		}
+	}
+	
+}
