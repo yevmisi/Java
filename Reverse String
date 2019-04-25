@@ -2,7 +2,7 @@ public class ReverseString {
 	
 	public static void main(String args[]) {
 		
-	 System.out.println(reverseString("looc"+" si"+" yinegveY"));}	
+	 System.out.println(reverseString(""));}	
 	 
 	 
 	 private static String reverseString (String str) {
